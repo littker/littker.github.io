@@ -70,24 +70,94 @@
         </div>
         <div class="content markdown">
             <h2 id="调试工具"><a href="#调试工具" class="headerlink" title="调试工具"></a>调试工具</h2><p>苹果系统中调试工具如loon、圈x、stash、surge等，windows系统中有clash for windows、V2rayN等。下面介绍的是自己手机上常用的软件loon的插件、配置、脚本和规则。</p>
-<h3 id="loon插件"><a href="#loon插件" class="headerlink" title="loon插件"></a>loon插件</h3><p>1.loon插件仓库：<a target="_blank" rel="noopener" href="https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/4a3b6152-3dd3-46da-b479-8c30ef6ef8d1">https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/4a3b6152-3dd3-46da-b479-8c30ef6ef8d1</a></p>
-<p>2.YFamily大佬网站：<a target="_blank" rel="noopener" href="https://yfamily.ml/loon.html">https://yfamily.ml/loon.html</a></p>
-<h4 id="Sub-Store进阶使用"><a href="#Sub-Store进阶使用" class="headerlink" title="Sub-Store进阶使用"></a>Sub-Store进阶使用</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">| :------------ |:---------------:| -----:|</span><br><span class="line">| 节点去复用与按照真实落地IP重命名节点 | some wordy text | $1600 |</span><br><span class="line">| 脚本操作：重命名                  | centered        |   $12 |</span><br><span class="line">| 脚本过滤：筛选80、443端口          | are neat        |    $1 |</span><br><span class="line">| 脚本过滤：筛选80、443端口，</span><br><span class="line">  vmess，ws节点（免流节点）          | some wordy text | $1600 |</span><br><span class="line">| 脚本操作:修改host混淆              | centered        |   $12 |</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| Left-Aligned  | Center Aligned  | Right Aligned |</span><br><span class="line">| :------------ |:---------------:| -----:|</span><br><span class="line">| col 3 is      | some wordy text | $1600 |</span><br><span class="line">| col 2 is      | centered        |   $12 |</span><br><span class="line">| zebra stripes | are neat        |    $1 |</span><br></pre></td></tr></table></figure>
-
-<p>1.节点去复用与按照真实落地IP重命名节点：<a target="_blank" rel="noopener" href="https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/5937e5fe-85f7-48bf-95a0-f9ed56365810">https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/5937e5fe-85f7-48bf-95a0-f9ed56365810</a></p>
-<p>2.脚本操作：重命名（）：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/qwerzl/rename.js/main/rename.js#input=zh&output=zh&airport=%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%BA%E5%9C%BA%E5%90%8D">https://raw.githubusercontent.com/qwerzl/rename.js/main/rename.js#input=zh&amp;output=zh&amp;airport=%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%BA%E5%9C%BA%E5%90%8D</a></p>
-<p>3.脚本过滤：筛选80、443端口：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/deezertidal/private/main/port-filter.js">https://raw.githubusercontent.com/deezertidal/private/main/port-filter.js</a></p>
-<p>4.脚本过滤：筛选80、443端口，vmess，ws节点（免流节点）：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/deezertidal/private/main/nodes-filter.js">https://raw.githubusercontent.com/deezertidal/private/main/nodes-filter.js</a></p>
-<p>5.脚本操作:修改host混淆：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/deezertidal/private/main/vmess-host.js">https://raw.githubusercontent.com/deezertidal/private/main/vmess-host.js</a></p>
-<h3 id="loon配置"><a href="#loon配置" class="headerlink" title="loon配置"></a>loon配置</h3><p>1.自用配置：</p>
-<p>2.可莉的最小配置：<a target="_blank" rel="noopener" href="https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Simple_Sample_Configuration_By_iKeLee.conf">https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Simple_Sample_Configuration_By_iKeLee.conf</a></p>
-<p>   可莉的进阶配置[要使用路由器翻墙(ssid)]：<a target="_blank" rel="noopener" href="https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Sample_Configuration_By_iKeLee.conf">https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Sample_Configuration_By_iKeLee.conf</a></p>
-<p>3.整点球啾的配置：<a target="_blank" rel="noopener" href="https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/qiuxiuya/qiuxiuya/main/Loon/LoonwithoutScript.conf">https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/qiuxiuya/qiuxiuya/main/Loon/LoonwithoutScript.conf</a></p>
-<p>4.叮当的配置(ssid)：</p>
+<h3 id="loon插件"><a href="#loon插件" class="headerlink" title="loon插件"></a>loon插件</h3><ol>
+<li><p>loon插件仓库：<a target="_blank" rel="noopener" href="https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/4a3b6152-3dd3-46da-b479-8c30ef6ef8d1">https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/4a3b6152-3dd3-46da-b479-8c30ef6ef8d1</a></p>
+</li>
+<li><p>YFamily大佬网站：<a target="_blank" rel="noopener" href="https://yfamily.ml/loon.html">https://yfamily.ml/loon.html</a></p>
+</li>
+</ol>
+<h4 id="Sub-Store进阶使用"><a href="#Sub-Store进阶使用" class="headerlink" title="Sub-Store进阶使用"></a>Sub-Store进阶使用</h4><ol>
+<li><p>节点去复用与按照真实落地IP重命名节点：<a target="_blank" rel="noopener" href="https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/5937e5fe-85f7-48bf-95a0-f9ed56365810">https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/5937e5fe-85f7-48bf-95a0-f9ed56365810</a></p>
+</li>
+<li><p>脚本操作：重命名（）：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/qwerzl/rename.js/main/rename.js#input=zh&output=zh&airport=%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%BA%E5%9C%BA%E5%90%8D">https://raw.githubusercontent.com/qwerzl/rename.js/main/rename.js#input=zh&amp;output=zh&amp;airport=%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9A%84%E6%9C%BA%E5%9C%BA%E5%90%8D</a></p>
+</li>
+<li><p>脚本过滤：筛选80、443端口：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/deezertidal/private/main/port-filter.js">https://raw.githubusercontent.com/deezertidal/private/main/port-filter.js</a></p>
+</li>
+<li><p>脚本过滤：筛选80、443端口，vmess，ws节点（免流节点）：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/deezertidal/private/main/nodes-filter.js">https://raw.githubusercontent.com/deezertidal/private/main/nodes-filter.js</a></p>
+</li>
+<li><p>脚本操作:修改host混淆：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/deezertidal/private/main/vmess-host.js">https://raw.githubusercontent.com/deezertidal/private/main/vmess-host.js</a></p>
+</li>
+</ol>
+<h4 id="BoxJs文档：https-chavyleung-gitbook-io-boxjs"><a href="#BoxJs文档：https-chavyleung-gitbook-io-boxjs" class="headerlink" title="BoxJs文档：https://chavyleung.gitbook.io/boxjs/"></a>BoxJs文档：<a target="_blank" rel="noopener" href="https://chavyleung.gitbook.io/boxjs/">https://chavyleung.gitbook.io/boxjs/</a></h4><ol>
+<li><a target="_blank" rel="noopener" href="https://ooxx.be/js/box.json">https://ooxx.be/js/box.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json">https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json">https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.json">https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chouchoui/QuanX/master/vei.boxjs.json">https://raw.githubusercontent.com/chouchoui/QuanX/master/vei.boxjs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json">https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/lowking/Scripts/master/lowking.boxjs.json">https://raw.githubusercontent.com/lowking/Scripts/master/lowking.boxjs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/songyangzz/QuantumultX/master/syzzzf.box.json">https://raw.githubusercontent.com/songyangzz/QuantumultX/master/syzzzf.box.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/toulanboy/scripts/master/toulanboy.boxjs.json">https://raw.githubusercontent.com/toulanboy/scripts/master/toulanboy.boxjs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/zZPiglet/Task/master/zZPiglet.boxjs.json">https://raw.githubusercontent.com/zZPiglet/Task/master/zZPiglet.boxjs.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/id77/QuantumultX/master/box.json">https://raw.githubusercontent.com/id77/QuantumultX/master/box.json</a></li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dompling/Script/master/dompling.boxjs.json">https://raw.githubusercontent.com/dompling/Script/master/dompling.boxjs.json</a></li>
+<li></li>
+</ol>
+<h3 id="loon配置"><a href="#loon配置" class="headerlink" title="loon配置"></a>loon配置</h3><ol>
+<li><p>自用配置：</p>
+</li>
+<li><p>可莉的最小配置：<a target="_blank" rel="noopener" href="https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Simple_Sample_Configuration_By_iKeLee.conf">https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Simple_Sample_Configuration_By_iKeLee.conf</a></p>
+</li>
+</ol>
+<p>​       可莉的进阶配置[要使用路由器翻墙(ssid)]：<a target="_blank" rel="noopener" href="https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Sample_Configuration_By_iKeLee.conf">https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Config/Loon_Sample_Configuration_By_iKeLee.conf</a></p>
+<ol start="3">
+<li><p>整点球啾的配置：<a target="_blank" rel="noopener" href="https://www.nsloon.com/openloon/import?sub=https://raw.githubussercontent.com/qiuxiuya/qiuxiuya/main/Loon/LoonwithoutScript.conf">https://www.nsloon.com/openloon/import?sub=https://raw.githubussercontent.com/qiuxiuya/qiuxiuya/main/Loon/LoonwithoutScript.conf</a></p>
+</li>
+<li><p>叮当的配置(ssid)：</p>
+</li>
+</ol>
 <h2 id="loon分流规则"><a href="#loon分流规则" class="headerlink" title="loon分流规则"></a>loon分流规则</h2><p>软件用的是blackmatrix7分流：<a target="_blank" rel="noopener" href="https://github.com/blackmatrix7/ios_rule_script/tree/master/rule">https://github.com/blackmatrix7/ios_rule_script/tree/master/rule</a></p>
-<h2 id="loon脚本"><a href="#loon脚本" class="headerlink" title="loon脚本"></a>loon脚本</h2>
+<h2 id="loon脚本"><a href="#loon脚本" class="headerlink" title="loon脚本"></a>loon脚本</h2><ol>
+<li><p>GLaDOS签到</p>
+<p>cron “5 0 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js">https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js</a>, timeout&#x3D;300, tag&#x3D;GLaDOS签到              </p>
+<p>http-request https://glados.rocks/api/user/checkin script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js">https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js</a>, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;获取GLaDOS_Cookie</p>
+</li>
+<li><p>美团签到</p>
+<p>http-request ^https://i.meituan.com/evolve/signin/signpost/ script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js">https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js</a>, requires-body&#x3D;true, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;meituan.cookie.js<br>cron “10 0 0 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js">https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js</a>, timeout&#x3D;300, tag&#x3D;meituan.plugin?type&#x3D;surge-module&amp;target&#x3D;loon-plugin<br>http-request ^https://i.meituan.com/evolve/signin/signpost/ script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js">https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js</a>, requires-body&#x3D;true, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;meituan.cookie.js<br>cron “10 0 0 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js">https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js</a>, timeout&#x3D;300, enabled&#x3D;false, tag&#x3D;meituan.js</p>
+</li>
+<li><p>喜马拉雅签到+任务<br>   cron “35 8 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js">https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js</a>, timeout&#x3D;300, tag&#x3D;喜马拉雅签到</p>
+</li>
+<li><p>腾讯视频签到<br>cron “0 8 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/videoqq.js">https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/videoqq.js</a>, timeout&#x3D;300, tag&#x3D;腾讯视频签到</p>
+</li>
+<li><p>摸鱼</p>
+<p>cron “6 9 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js">https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js</a>, timeout&#x3D;10, tag&#x3D;摸鱼, img-url&#x3D;<a target="_blank" rel="noopener" href="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png">https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png</a></p>
+</li>
+<li><p>阿里云盘签到</p>
+<p>cron “10 0 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js">https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js</a>, timeout&#x3D;300, tag&#x3D;阿里网盘签到, img-url&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPan.png">https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPan.png</a><br>http-request ^https://auth.aliyundrive.com/v2/account/token script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js">https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js</a>, requires-body&#x3D;true, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;阿里网盘token获取</p>
+</li>
+<li><p>捷停车签到</p>
+<p>cron “0 8 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js">https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js</a>, timeout&#x3D;300, tag&#x3D;捷停车签到, img-url&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_1.png">https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_1.png</a><br>http-request ^https://sytgate.jslife.com.cn/core-gateway/order/carno/pay/info script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js">https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js</a>, requires-body&#x3D;true, timeout&#x3D;10, tag&#x3D;获取捷停车userId</p>
+</li>
+<li><p>美团买菜币</p>
+<p>http-request ^https?://mall.meituan.com/api/c/mallcoin/checkIn/queryTaskListInfoV.? script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js">https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js</a>, timeout&#x3D;10, tag&#x3D;美团CK<br>cron “0 8 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js">https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js</a>, timeout&#x3D;300, tag&#x3D;买菜币, img-url&#x3D;<a target="_blank" rel="noopener" href="https://qxnav.com/rules/QuantumultX/img/meituan.png">https://qxnav.com/rules/QuantumultX/img/meituan.png</a></p>
+</li>
+<li><p>微信小程序伊利签到</p>
+<p>http-request https://club.yili.com/MALLIFChe/MCSWSIAPI.asmx/Call script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js">https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js</a>, requires-body&#x3D;true, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;yiLi.cookie.js<br>cron “0 8 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js">https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js</a>, timeout&#x3D;300, tag&#x3D;yiLi.js</p>
+</li>
+<li><p>京东价格变化</p>
+<p>http-response ^https?:&#x2F;&#x2F;api.m.jd.com&#x2F;client.action?functionId&#x3D;(wareBusiness|serverConfig|basicConfig) script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js">https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js</a>, requires-body&#x3D;true, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;jd_price.js, img-url&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Keywos/Qure/main/Naiko.png">https://raw.githubusercontent.com/Keywos/Qure/main/Naiko.png</a></p>
+</li>
+<li><p>汇率监控</p>
+<p>cron “0 8 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js">https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js</a>, timeout&#x3D;300, tag&#x3D;汇率监控, img-url&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chxm1023/Task/main/icon/hljk.png">https://raw.githubusercontent.com/chxm1023/Task/main/icon/hljk.png</a></p>
+</li>
+<li><p>中国电信余量提醒</p>
+<p>cron “0 7 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://github.com/ChinaTelecomOperators/ChinaTelecom/releases/download/Prerelease-Alpha/Tele_Cellular_Auto.js">https://github.com/ChinaTelecomOperators/ChinaTelecom/releases/download/Prerelease-Alpha/Tele_Cellular_Auto.js</a>, timeout&#x3D;300, tag&#x3D;Tele_Cellular_Auto.js</p>
+</li>
+<li><p>ikuuu 签到</p>
+<p>http-request <a target="_blank" rel="noopener" href="https://ikuuu.art/user">https://ikuuu.art/user</a> script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js">https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js</a>, timeout&#x3D;10, enabled&#x3D;false, tag&#x3D;获取Cookie<br>cron “5 0 * * *” script-path&#x3D;<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js">https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js</a>, timeout&#x3D;300, tag&#x3D;机场签到Cookie版</p>
+</li>
+</ol>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
